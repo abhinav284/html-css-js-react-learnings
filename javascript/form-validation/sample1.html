@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<script>
+    function validate(){
+    const name = document.getElementById("name").value;
+    const password = document.getElementById("password").value;
+    const email = document.getElementById("email").value;
+    const collage_name = document.getElementById("collage_name").value;
+
+    if(name === ""){
+        alert("Name Field cannot be empty.. ");
+        isValid = false;
+    }
+    if(password === ""){
+        alert("password Field cannot be empty.. ");
+        isValid = false;
+    }
+    if(email === ""){
+        alert("email Field cannot be empty.. ");
+        isValid = false;
+    }
+    if(collage_name === ""){
+        alert(" collage name cannot be empty.. ");
+        isValid = false;
+    }
+    if(isValid){
+        alert("Form Submitted success")
+    }
+}
+</script>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        Name: <input type="text" id="name" /> <br /> <br />
+        Password: <input type="password" id="password" /> <br /> <br />
+        Email: <input type="text" id="email" /> <br /> <br />
+        Collage Name: <input type="text" id="collage_name" /> <br /> <br />
+        <input type="submit" value="save" name="submit" />
+        <input type="reset" value="Reset" name="Reset" />
+
+
+    </form>
+</body>
+</html>

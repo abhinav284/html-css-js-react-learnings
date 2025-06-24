@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    // syntax of a promise
+    // let promise = new promise(function(resolve, reject){
+    // });
+    const count = true;
+    let countValue = new Promise( function(resolve, reject){
+        if(count){
+            resolve('There is a count vaalue');
+
+        }else {
+            reject("There is no count value");
+        }
+    });
+    //console.log(countValue);
+    countValue.then(function successValue(result){
+        console.log(result);
+    }).then(function successValue1(){
+        console.log("You can call multiple function this way");
+    }).catch(function error(res){
+        console.log("Handled by catch: " + res);
+    })
+
+</script>
+<body>
+    <h2>Promise in E56</h2>
+</body>
+</html>

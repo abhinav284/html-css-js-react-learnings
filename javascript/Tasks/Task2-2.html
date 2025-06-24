@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Toggle</title>
+</head>
+<body>
+    <h2>Task 2.2: Toggle Background Color</h2>
+    
+    <button onclick="toggleBackgroundColor()">Toggle Background Color</button>
+
+    <script>
+        function toggleBackgroundColor() {
+            let currentColor = document.body.style.backgroundColor;
+
+            if (currentColor === "gray") {
+                document.body.style.backgroundColor = "white";
+            } else {
+                document.body.style.backgroundColor = "gray";
+            }
+        }
+    </script>
+</body>
+</html>
