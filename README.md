@@ -20,7 +20,7 @@ This repository contains my hands-on learning and mini-projects for frontend dev
 - HTML5
 - CSS3
 - JavaScript (ES6)
-- Bootstrap 4/5
+- Bootstrap 
 - jQuery
 - React.js
 
